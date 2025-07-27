@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "",
+  "author": "Agugbue ikenna",
   "main": "server.js",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
@@ -56,7 +56,7 @@
     "test": "jest",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build:js": "npx parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "lint": "eslint ./",
     "format": "prettier --write .",
     "clean": "rm -rf ./public/js/bundle.js"
@@ -81,7 +81,6 @@
     "parcel-bundler": "^1.12.5"
   },
   "engines": {
-  "node": "16"
-}
-
+    "node": "16"
+  }
 }
