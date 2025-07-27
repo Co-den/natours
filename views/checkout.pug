@@ -1,0 +1,40 @@
+extends base
+
+
+block content
+    .container
+      .checkout-wrapper
+        h2 Checkout
+        p Secure payment powered by Stripe
+
+        .product-summary
+          h3 Order Summary
+          ul
+            li
+              strong Awesome T-Shirt
+              span $20.00
+            li
+              strong Shipping
+              span $5.00
+            li.total
+              strong Total
+              span $25.00
+
+        form(action="/create-checkout-session", method="POST")
+          .customer-info
+            label(for="email") Email Address
+            input#email(type="email", required)
+
+          .card-info
+            label(for="card") Card Details
+            // Stripe Elements will mount here
+            #card-element
+
+          .billing-info
+            label(for="name") Name on Card
+            input#name(type="text", required)
+
+          button(type="submit") Pay $25.00
+
+        .footer-note
+          p By confirming, you agree to our terms and refund policy.

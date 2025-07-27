@@ -1,0 +1,8 @@
+node_modules
+config.env
+bundle.js.map
+bundle.js
+psl.68abf60c.cjs
+.cache
+.parcel-cache
+.vscode
