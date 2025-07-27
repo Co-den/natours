@@ -56,7 +56,8 @@
     "test": "jest",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build:js": "npx parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build": "parcel build ./public/index.html --dist-dir dist --no-source-maps",
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "lint": "eslint ./",
     "format": "prettier --write .",
     "clean": "rm -rf ./public/js/bundle.js"
