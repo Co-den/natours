@@ -1,4 +1,3 @@
-/* eslint-disable */
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import { login, logout, signup } from "./login.js";
