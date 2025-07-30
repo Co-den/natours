@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from "axios";
 import { showAlert } from "./alerts.js";
 
 export async function login(email, password) {
@@ -55,6 +55,9 @@ export async function signup(name, email, password, passwordConfirm) {
       }, 1500);
     }
   } catch (err) {
-    showAlert("error", err.response?.data?.message || "An error occurred during signup.");
+    showAlert(
+      "error",
+      err.response?.data?.message || "An error occurred during signup."
+    );
   }
 }
