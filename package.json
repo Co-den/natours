@@ -90,12 +90,12 @@
       "distDir": "./public/js/bundle"
     }
   },
-  "presets": [
+  "plugins": [
     [
-      "@babel/preset-env",
+      "@babel/plugin-transform-runtime",
       {
-        "useBuiltIns": "entry",
-        "corejs": "3"
+        "corejs": 3,
+        "regenerator": true
       }
     ]
   ]
