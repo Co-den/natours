@@ -1,5 +1,5 @@
-import 'core-js/stable/index.js';
-import 'regenerator-runtime/runtime.js';
+import 'core-js/stable';
+import 'regenerator-runtime';
 import { login, logout, signup } from "./login.js";
 import { updateSettings } from "./updateSettings.js";
 import { bookTour } from "./stripe.js";
