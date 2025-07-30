@@ -56,9 +56,9 @@
     "start_prod": "NODE_ENV=production nodemon server.js",
     "test": "jest",
     "debug": "ndb server.js",
-    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
-    "build": "parcel build ./public/js/index.js --dist-dir ./public/js/bundle",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "watch:js": "npx parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build": "npx parcel build ./public/js/index.js --dist-dir ./public/js/bundle",
+    "build:js": "npx parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
     "lint": "eslint ./",
     "format": "prettier --write .",
     "clean": "rm -rf ./public/js/bundle.js"
