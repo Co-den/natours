@@ -15,7 +15,7 @@
     "compression": "^1.8.0",
     "connect-mongo": "^5.1.0",
     "cookie-parser": "^1.4.7",
-    "core-js": "^3.42.0",
+    "core-js": "^3.44.0",
     "cors": "^2.8.5",
     "dompurify": "^3.2.3",
     "dotenv": "^16.4.7",
@@ -83,9 +83,8 @@
     "parcel-bundler": "^1.12.5"
   },
   "targets": {
-  "default": {
-    "distDir": "./public/js/bundle"
+    "default": {
+      "distDir": "./public/js/bundle"
+    }
   }
-}
-
 }
